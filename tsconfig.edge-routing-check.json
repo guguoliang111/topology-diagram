@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./dist-check",
+    "rootDir": "./src",
+    "declaration": false,
+    "emitDeclarationOnly": false,
+    "rewriteRelativeImportExtensions": true
+  },
+  "include": [
+    "src/config/edgeRouting.ts",
+    "src/config/edgeSpacing.ts",
+    "src/config/graphConfig.ts"
+  ]
+}

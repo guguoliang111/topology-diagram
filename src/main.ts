@@ -7,8 +7,10 @@ import router from './router'
 import App from './App.vue'
 import './styles/global.css'
 import { registerCustomEdges } from './config/customEdges'
+import { registerCustomNodes } from './config/customNodes'
 
 registerCustomEdges()
+registerCustomNodes()
 const app = createApp(App)
 
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
